@@ -131,6 +131,9 @@ a {
 	grid-template-rows: repeat(5, minmax(0, auto));
 	/* margin-bottom: 20px; */
 	padding: 10px;
+	background-image: url(images/bg-quotes.png);
+	background-repeat: no-repeat;
+	background-position: auto;
 }
 #container section#testimony img {
 	width: 30px;
@@ -259,4 +262,168 @@ a {
 }
 #container footer li {
 	list-style-type: none;
+}
+@media screen and (max-width: 380px) {
+	nav img {
+		width: 80px;
+		grid-column: 2/3;
+	}
+	nav ul {
+		grid-column: 6/13;
+		display: flex;
+		padding: 0;
+		margin: 0;
+	}
+	nav ul li {
+		list-style-type: none;
+		margin-right: 5px;
+	}
+
+	#banner {
+		grid-row: 2/3;
+		grid-column: 1/13;
+		text-align: center;
+		margin-top: 10px;
+		padding: 5px;
+		background-image: url(images/bg-curvy-mobile.svg);
+		background-position: bottom;
+		background-repeat: no-repeat;
+	}
+	#banner button {
+		padding: 10px 50px;
+		font-weight: bold;
+		background-color: hsl(198, 60%, 50%);
+		border: none;
+		border-radius: 25px;
+		color: white;
+		margin-bottom: 20px;
+		margin-top: 5px;
+	}
+	#banner img {
+		width: 250px;
+	}
+
+	main #access {
+		grid-column: 2/12;
+		grid-row: 1/2;
+	}
+	main #secure {
+		grid-column: 2/12;
+		grid-row: 2/3;
+	}
+	main #colabo {
+		grid-column: 2/12;
+		grid-row: 3/4;
+	}
+	main #store {
+		grid-column: 2/12;
+		grid-row: 4/5;
+	}
+	#container section#productive #leftImg {
+		grid-column: 2/12;
+		grid-row: 1/2;
+		margin-top: 30px;
+		margin-bottom: 10px;
+	}
+
+	#container section#productive #leftImg img {
+		width: 300px;
+	}
+	#container section#productive #rightText {
+		margin-top: 80px;
+		grid-column: 2/12;
+		grid-row: 2/3;
+	}
+	#container section#testimony {
+		margin: 0 auto;
+	}
+	#container section#testimony #testimonyOne {
+		grid-column: 2/12;
+		grid-row: 1/2;
+	}
+	#container section#testimony #testimonyTwo {
+		grid-column: 2/12;
+		grid-row: 2/3;
+	}
+	#container section#testimony #testimonyThree {
+		grid-column: 2/12;
+		grid-row: 3/4;
+	}
+
+	#container section#subscription {
+		background-color: hsl(217, 27%, 15%);
+		position: relative;
+		top: 70px;
+		grid-row: 6/7;
+		grid-column: 1/13;
+		width: 70%;
+		/* height: 100%; */
+		text-align: center;
+		padding: 10px;
+		border-radius: 5px;
+		margin: 0 auto;
+		box-shadow: 5px 5px rgba(0, 0, 0, 0.384);
+	}
+	#container section#subscription button {
+		width: 100%;
+	}
+
+	#container section#subscription input {
+		width: 100%;
+		margin: 10px auto;
+	}
+
+	#container footer {
+		padding-top: 100px;
+		background-color: hsl(216, 53%, 9%);
+		grid-row: 7/8;
+		grid-column: 1/13;
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-template-rows: repeat(5, minmax(0, auto));
+		margin: 0;
+	}
+
+	#container footer img {
+		grid-column: 2/13;
+		grid-row: 1/2;
+		width: 100px;
+	}
+	#container footer p {
+		grid-column: 2/13;
+		grid-row: 2/3;
+	}
+	#container footer ul#footerFirst {
+		grid-column: 2/13;
+		grid-row: 3/4;
+	}
+	#container footer ul#footerSecond {
+		grid-column: 2/13;
+		grid-row: 4/5;
+	}
+	#container footer ul#footerThird {
+		grid-column: 2/13;
+		grid-row: 5/6;
+	}
+	#container footer ul#links {
+		grid-column: 2/13;
+		grid-row: 6/7;
+		display: flex;
+		justify-self: center;
+	}
+	#container footer ul {
+		margin-top: 10px;
+		padding: 0;
+	}
+	#container footer ul#links li {
+		list-style-type: none;
+		margin-right: 10px;
+	}
+	#container footer i {
+		margin-right: 5px;
+	}
+	#container footer li {
+		list-style-type: none;
+		margin: 10px auto;
+	}
 }

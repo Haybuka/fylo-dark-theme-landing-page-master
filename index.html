@@ -7,6 +7,7 @@
   <!-- displays site properly based on user's device -->
   <!-- Github Repo https://github.com/Haybuka/fylo-dark-theme-landing-page-master.git -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="fontAwesome/css/all.min.css">
   <link rel="stylesheet" href="main.css">
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
 
@@ -36,8 +37,8 @@
     <div id="banner">
       <img src="images/illustration-intro.png" alt="">
       <h1>All your files in one secure location, accessible anywhere.</h1>
-      <p> Fylo stores all your most important files in one secure location. Access them wherever
-        you need, share and collaborate with friends family, and co-workers.
+      <p> Fylo stores all your most important files in one secure location.<br /> Access them wherever
+        you need, share and collaborate with <br />friends family, and co-workers.
       </p>
       <button>Get Started</button>
     </div>
@@ -94,11 +95,10 @@
       <article id="testimonyOne">
         <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
           become a well-oiled collaboration machine.</p>
-        <h1>text</h1>
         <div class="profile">
           <img src="images/profile-1.jpg" alt="">
-          Satish Patel
-          Founder & CEO, Huddle
+          <h4>Satish Patel</h4>
+          <small>Founder & CEO, Huddle</small>
         </div>
 
       </article>
@@ -107,8 +107,8 @@
           become a well-oiled collaboration machine.</p>
         <div class="profile">
           <img src="images/profile-2.jpg" alt="">
-          Bruce McKenzie
-          Founder & CEO, Huddle
+          <h4>Bruce McKenzie</h4>
+          <small>Founder & CEO, Huddle</small>
         </div>
       </article>
       <article id="testimonyThree">
@@ -116,42 +116,47 @@
           become a well-oiled collaboration machine.</p>
         <div class="profile">
           <img src="images/profile-3.jpg" alt="">
-          Iva Boyd
-          Founder & CEO, Huddle
+          <h4> Iva Boyd</h4>
+          <small>Founder & CEO, Huddle</small>
+
         </div>
       </article>
     </section>
     <section id="subscription">
-      Get early access today
-      It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
-      questions, our support team would be happy to help you.
+      <h2> Get early access today</h2>
+      <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
+        questions, our support team would be happy to help you.</p>
+      <input type="email" name="mail" id='mail'>
       <button>Get Started For Free </button>
     </section>
     <footer>
 
       <img src="images/logo.svg" alt="">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+      <p><i class="fas fa-map-marker-alt"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
         dolore magna aliqua
       </p>
-      <ul>
-        <li><span>phone :</span>+1-543-123-4567</li>
-        <li><span>mail :</span>example@fylo.com</li>
+      <ul id="footerFirst">
+        <li><i class="fas fa-phone-volume"></i> +1-543-123-4567</li>
+        <li><i class="fas fa-envelope"></i> example@fylo.com</li>
       </ul>
 
-      <ul>
+      <ul id="footerSecond">
         <li>About Us</li>
         <li>Jobs</li>
         <li>Press</li>
         <li>Blog</li>
       </ul>
-      <ul>
+      <ul id="footerThird">
         <li>Contact Us</li>
         <li>Terms</li>
         <li>Privacy</li>
       </ul>
-
-
-
+      <ul id="links">
+        <li><i class="fab fa-twitter"></i></li>
+        <li><i class="fab fa-facebook"></i></li>
+        <li><i class="fab fa-instagram"></i></li>
+      </ul>
     </footer>
   </div>
 
